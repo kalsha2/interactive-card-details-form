@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light_grayish_violet: hsl(270, 3%, 87%);
+  --Dark_grayish_violet: hsl(279, 6%, 55%);
+  --Very_dark_violet: hsl(278, 68%, 11%);
+}
+.body {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.container {
+  
+}
+.bg-gradient img{
+  position: relative;
+}
+.bg-gradient{
+
+}
+.front-card{
+  background-image: url(/images/bg-card-front.png);
+  height: 250px;
+  width: 450px;
+  position: absolute;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+}
