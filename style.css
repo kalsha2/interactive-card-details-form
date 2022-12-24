@@ -24,9 +24,17 @@
 }
 .front-card{
   background-image: url(/images/bg-card-front.png);
-  height: 250px;
-  width: 450px;
+  height: 220px;
+  width: 400px;
   position: absolute;
+  top: 80px;
+  left: 180px;
+  border-radius: 10px;
+}
+.back-card{
+  position: absolute;
+  top: 330px;
+  left: 250px;
 }
 .attribution {
   font-size: 11px;

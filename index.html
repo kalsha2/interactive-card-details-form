@@ -19,17 +19,41 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <div class="container">
+        <!--         The backgroound gradient-->
         <div class="bg-gradient">
-          <img src="/images/bg-main-desktop.png" alt="">
+          <img src="/images/bg-main-desktop.png" alt="" />
         </div>
+        <!-- The front card -->
+
         <div class="front-card"></div>
+        <!-- The back card -->
+
         <div class="back-card">
           <img src="/images/bg-card-back.png" alt="" />
+        </div>
+        <div class="theform">
+          <form action="GET">
+            <label for="holder">
+              CardHolder Name <br />
+              <input type="text" name="holder" id="holder" />
+            </label>
+            <br />
+            <label for="Number">
+              Card Number <br />
+              <input type="text" name="Number" id="Number" />
+            </label>
+            <br />
+            <label for="exdate">
+              Exp.Date (MM/YY)<br />
+              <input type="month" name="exdate" id="exdate" />
+              <input type="year" />
+            </label>
+          </form>
         </div>
         <div class="attribution">
           Challenge by
