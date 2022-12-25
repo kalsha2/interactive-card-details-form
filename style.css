@@ -9,20 +9,26 @@
   --Dark_grayish_violet: hsl(279, 6%, 55%);
   --Very_dark_violet: hsl(278, 68%, 11%);
 }
-.body {
+.flex {
+  display: flex;
+}
+body {
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
 }
 .container {
-  
+  height: 100vh;
 }
-.bg-gradient img{
+.bg-gradient {
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  height: 100vh;
+  width: 30%;
 }
-.bg-gradient{
 
-}
-.front-card{
+.front-card {
   background-image: url(/images/bg-card-front.png);
   height: 220px;
   width: 400px;
@@ -31,14 +37,73 @@
   left: 180px;
   border-radius: 10px;
 }
-.back-card{
+.back-card {
   position: absolute;
   top: 330px;
   left: 250px;
 }
+
+.theform {
+  position: absolute;
+  top: 200px;
+  left: 900px;
+  font-size: 13px;
+  display: none;
+}
+
+.theform input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 0;
+}
+.theform input[type="month"],
+#cvc {
+  width: 195px;
+}
+.theform input[type="submit"],
+.btn {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.Thanks {
+  position: absolute;
+  top: 200px;
+  left: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Thanks > * {
+  margin: 10px;
+}
+.Thanks > *:nth-child(3) {
+  font-size: 15px;
+  color: var(--Dark_grayish_violet);
+}
+.btn {
+  text-align: center;
+  margin-top: 50px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  left: 600px;
 }
 .attribution a {
 }

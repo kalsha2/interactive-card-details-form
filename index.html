@@ -20,14 +20,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
   </head>
   <body>
     <section>
       <div class="container">
         <!--         The backgroound gradient-->
-        <div class="bg-gradient">
-          <img src="/images/bg-main-desktop.png" alt="" />
-        </div>
+        <div class="bg-gradient"></div>
         <!-- The front card -->
 
         <div class="front-card"></div>
@@ -37,23 +36,46 @@
           <img src="/images/bg-card-back.png" alt="" />
         </div>
         <div class="theform">
-          <form action="GET">
+          <form action="" method="get">
             <label for="holder">
-              CardHolder Name <br />
-              <input type="text" name="holder" id="holder" />
+              CARDHOLDER NAME <br />
+              <input
+                type="text"
+                name="holder"
+                id="holder"
+                placeholder="eg. Kaleab Wodnwossen"
+              />
             </label>
             <br />
             <label for="Number">
-              Card Number <br />
-              <input type="text" name="Number" id="Number" />
+              CARD NUMBER <br />
+              <input
+                type="text"
+                name="Number"
+                id="Number"
+                placeholder="eg. 1234 5678 9010 0000"
+              />
             </label>
             <br />
-            <label for="exdate">
-              Exp.Date (MM/YY)<br />
-              <input type="month" name="exdate" id="exdate" />
-              <input type="year" />
-            </label>
+            <div class="flex">
+              <label for="exdate">
+                EXP. DATE (MM/YY)<br />
+                <input type="month" name="exdate" id="exdate" />
+              </label>
+              <label for="cvc">
+                CVC
+                <br />
+                <input type="text" name="" id="cvc" placeholder="eg. 123" />
+              </label>
+            </div>
+            <input type="submit" value="Confirm" onclick="Submitted ();" />
           </form>
+        </div>
+        <div class="Thanks">
+          <img src="/images/icon-complete.svg" alt="" />
+          <h1>Thank You!</h1>
+          <p>We have added your card details</p>
+          <div class="btn"><p>Continue</p></div>
         </div>
         <div class="attribution">
           Challenge by
