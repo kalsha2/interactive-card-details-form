@@ -20,21 +20,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="/script.js"></script>
   </head>
   <body>
     <section>
       <div class="container">
         <!--         The backgroound gradient-->
         <div class="bg-gradient"></div>
-        <!-- The front card -->
-
-        <div class="front-card"></div>
+        
         <!-- The back card -->
-
         <div class="back-card">
           <img src="/images/bg-card-back.png" alt="" />
         </div>
+        
+        <!-- The front card -->
+        <div class="front-card"></div>
+
         <div class="theform">
           <form action="" method="get">
             <label for="holder">
@@ -50,10 +50,11 @@
             <label for="Number">
               CARD NUMBER <br />
               <input
-                type="text"
+                type="number"
                 name="Number"
                 id="Number"
                 placeholder="eg. 1234 5678 9010 0000"
+                pattern="[1111 2222 3333 4444]"
               />
             </label>
             <br />
@@ -65,10 +66,10 @@
               <label for="cvc">
                 CVC
                 <br />
-                <input type="text" name="" id="cvc" placeholder="eg. 123" />
+                <input type="text" name="" id="cvc" placeholder="eg. 123" required/>
               </label>
             </div>
-            <input type="submit" value="Confirm" onclick="Submitted ();" />
+            <input type="submit" value="Confirm" />
           </form>
         </div>
         <div class="Thanks">
@@ -81,9 +82,10 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by<a href="#">Kaleab Wondwossen</a>.
+          >. Code by<a href="#">Kaleab Wondwossen</a>.
         </div>
       </div>
     </section>
+    <script src="/script.js"></script>
   </body>
 </html>
